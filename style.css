@@ -1,0 +1,564 @@
+/*=========общее==========*/
+@font-face {
+    font-family: "Lava 3";
+    src: url("https://s3-eu-west-1.amazonaws.com/arzamas-fonts/v4/fonts/WF-024344-008038-001181.eot");
+    src: url("https://s3-eu-west-1.amazonaws.com/arzamas-fonts/v4/fonts/WF-024344-008038-001181.eot?#iefix") format("embedded-opentype"),url("https://s3-eu-west-1.amazonaws.com/arzamas-fonts/v4/fonts/WF-024344-008038-001181.woff") format("woff"),url("https://s3-eu-west-1.amazonaws.com/arzamas-fonts/v4/fonts/WF-024344-008038-001181.ttf") format("truetype"),url("https://s3-eu-west-1.amazonaws.com/arzamas-fonts/v4/fonts/WF-024344-008038-001181.svg#typotheque_webfonts_service") format("svg");
+    font-style: Normal;
+    font-weight: 400;
+    font-stretch: normal
+}
+
+@font-face {
+  font-family: 'Work Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/work-sans-v2-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local('Work Sans'), local('WorkSans-Regular'),
+       url('../fonts/work-sans-v2-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/work-sans-v2-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/work-sans-v2-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/work-sans-v2-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/work-sans-v2-latin-regular.svg#WorkSans') format('svg'); /* Legacy iOS */
+}
+
+body{
+	padding: 0;
+	margin: 0;
+}
+
+a{
+	text-decoration: none;
+	color: #181a1f;
+}
+
+.content{
+	min-width: 1000px;
+}
+
+.list{
+	list-style: none;
+	display: inline-block;
+}
+
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.app{
+
+}
+/*==========шапка===============*/
+.content-header{
+	height: 520px;
+	background: #ffffe8;
+	font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.4;
+    font-family: Montserrat, sans-serif;
+    letter-spacing: 1px;
+    background-color: #000;
+    color: white;
+    box-shadow: 0px 85px 10px black;
+}
+
+.content-header a{
+    color: white;
+}
+
+.backgrond-avatar{
+	background: url(C:/Users/пользователь/Desktop/дизайнер/img/avatar.jpg) center 0px fixed;
+	background-size: cover;
+	opacity: 1;
+}
+
+.top-panel{
+	padding: 10px 10px;
+	text-align: right;
+	margin-right: 20px;
+	font-size: 10px;
+}
+
+.top-panel input{
+	border: 1px solid black;
+	border-radius: 20px;
+	font-size: 10px;
+}
+
+.top-panel a:hover{
+	color: #46b193;
+	text-decoration: underline;
+
+}
+
+.down-panel{
+	padding-top: 18px;
+	padding: 10px 10px 10px 54px;
+}
+
+.header-logotype{
+	display: inline-block;
+	width: 400px;
+}
+
+.header-logotype span{
+	font-size: 40px;
+	vertical-align: 40%;
+	color: #efefef;
+}
+
+.header-logotype img{
+	width: 50px;
+	height: 50px;
+}
+
+.header-navigator{
+	padding-top: 23px;
+	float: right;
+}
+
+.header-navigator ul{
+	margin: 0;
+}
+
+.header-navigator li{
+	padding: 0 20px;
+	border-left: 1px solid black;
+	vertical-align: 100%;
+}
+
+.header-navigator:first-child{
+	padding-left: 20px;
+	border-left: 0px solid #fff;
+}
+
+.header-navigator .linone{
+	padding-left: 20px;
+	border-left: 0px solid #fff;
+}
+
+.header-navigator div{
+text-align: center;
+font-size: 9px;
+font-weight: 100;
+line-height: 1.2;
+font-family: sans-serif;
+letter-spacing: 1px;
+}
+
+.header-navigator li a:hover{
+	color: #d29292;
+}
+
+.header-navigator li:hover{
+	color: #d29292;
+}
+
+/*==========аватар===================*/
+.content-avatar{
+	margin-top: 40px;
+	padding: 10px 54px;
+	border-top: 2px solid rgba(160,153,153,.40);
+	height: 400px;
+}
+
+.avatar-img{
+	margin-left: 20px;
+	width: 390px;
+	height: 300px;
+	float: left;
+}
+
+.avatar-info{
+	float: right;
+	margin-top: 50px;
+	margin-right: 150px;
+	text-align: center;
+}
+
+.avatar-info h1{
+	margin: 2px 0;
+	font-size: 60px;
+}
+
+.avatar-info p{
+	margin: 0;
+}
+
+.avatar-btn{
+	position: absolute;
+	bottom: 80px;
+	left: 430px;
+}
+
+.avatar-btn button{
+	width: 200px;
+	background: rgba(187, 174, 128, 0.71);
+	color: #d8d8d8;
+	font-size: 17px;
+}
+
+.avatar-btn button:hover{
+	background: rgba(255, 219, 90, 0.63);
+	color: #d8cece;
+}
+
+.aff{
+	display: none;
+}
+/*=======информационное панель======*/
+.content-info{
+	margin-top: 80px;
+}
+
+.info-change ul{
+	margin: 0;
+	padding: 0;
+}
+
+
+.info-change li{
+	font-size: 40px;
+	font-style: normal;
+    font-weight: 700;
+    font-size: 27px;
+    line-height: 1.38;
+    font-family: "Lava 3", Georgia, serif;
+    letter-spacing: 0px;
+    text-align: inherit;
+    color: #181a1f;
+	
+	text-align: center;
+	width: 49.96%;
+	border-bottom: 1px inset #666;
+}
+
+.info-change li:first-child{
+	border-right: 1px solid black;
+}
+
+.info-change li:hover{
+    background: #ffffe8;
+    cursor: pointer;
+}
+
+.info-change .change{
+    color: #97869a;
+}
+
+.info-title{
+	text-align: center;
+	padding: 25px 0;
+	font: bold 30px 'Work Sans', sans-serif;
+	font-weight: 750;
+}
+
+.info-title:after{
+	content: '';
+    width: 75px;
+    height: 5px;
+    vertical-align: middle;
+    display: inline-block;
+    background: transparent url("C:/Users/пользователь/Desktop/дизайнер/img/палка (право).png") 50% 50% no-repeat;
+}
+
+.info-title:before{
+	content: '';
+	width: 75px;
+    height: 5px;
+    vertical-align: middle;
+    display: inline-block;
+	background: transparent url("C:/Users/пользователь/Desktop/дизайнер/img/палка (право).png") 50% 50% no-repeat;
+}
+
+.info-title a:hover{
+	text-decoration: underline;
+}
+
+.info-products{
+	width: 100%;
+    min-width: 300px;
+    margin: 0 auto;
+    padding: 5px 0;
+}
+
+.info-1{
+	background: #efc9c9;
+}
+
+.info-2{
+	background: #e4c9ef;
+}
+
+.info-3{
+	background: #c9efcc;
+}
+
+.info-4{
+	background: #c9ddef;
+}
+
+
+.row-info{
+	width: 23.00%; /*22.73*/
+    display: inline-block;
+    vertical-align: top;
+    padding: 0;
+	height: 380px;
+}
+
+.row-info div{
+	text-align: center;
+	margin: 0 auto;
+	width: 50%;
+}
+
+.row-info h3{
+	font-size: 100%;
+	font-family: Work Sans, sans-serif;
+	font-weight: 800;
+}
+
+.row-info span{
+	font-size: 80%;
+	color: #504949;
+	font-family: "Helvetica Neue", "HelveticaNeue", Helvetica, Arial, sans-serif;
+}
+
+.row-info hr{
+	width: 90px;
+}
+
+.row-info img{
+	width: 96%;
+	margin: 2%;
+	height: 250px;
+	border-radius: 1%;
+	border: none;
+}
+
+.row-info:hover{
+	cursor: pointer;
+	background: #d2d2d2;
+	opacity: 0.8;
+}
+
+.arrow-info{
+	width: 4%;
+    display: inline-block;
+	padding: 0 0;
+	height: 380px;
+	vertical-align: middle;
+}
+
+.arrow-info:hover{
+	cursor: pointer;
+	background: #ffffe8;
+}
+
+img{
+	width: 100%;
+}
+
+/*=============форм=================*/
+.content-form{
+	padding: 10px 0;
+	margin: 0 auto;
+	width: 92%;
+}
+
+.content-form textarea{
+	resize: none;
+	width: 100%;
+	height: 150px;
+	border: 1px solid rgb(255, 225, 134);
+    margin-bottom: 10px;
+    box-shadow: 5px -2px 5px rgba(249, 211, 100, 0.62);
+}
+
+.content-form textarea:focus{
+	border: none;
+	outline: none;
+	border: 2px solid #e7f9ff;
+	box-shadow:  5px -5px 5px rgba(175, 226, 255, 0.43);
+}
+
+.btn{
+	border: none;
+	width: 120px;
+	height: 35px;
+	background: #f9d364;
+ 	font-family: BlinkMacSystemFont,Roboto,Open Sans,Helvetica Neue,sans-serif;
+	font-size: 15px;
+	color: #fff;
+}
+
+.btn:hover{
+	cursor: pointer;
+}
+
+.btn_mini{
+	width: 50px;
+	height: 35px;
+	border: none;
+	margin-left: 10px;
+	font-size: 20px;
+	/* background: url('C:/Users/пользователь/Desktop/дизайнер/img/photo.png') 50% 50% no-repeat; */
+}
+
+.btn_mini:hover{
+	cursor: pointer;
+}
+
+.btn_border{
+	margin: 0 10px;
+	display: inline;
+	border-left: 1px groove #fff9f9;
+}
+/*===========комент==================*/
+.content-comment{
+	margin: 0 auto;
+	width: 92%;
+	padding-bottom: 10px;
+}
+
+.content-comment div{
+	width: 100%;
+}
+
+.comm{
+	padding: 10px 0;
+	height: 120px;
+}
+
+.comm1{
+	background: url('C:/Users/пользователь/Desktop/дизайнер/img/коммент.jpg') 0% 80% no-repeat;
+}
+
+.comm1 h1{
+	color: #afaf82;
+}
+
+.comm1 p{
+	color: #4b6667;
+}
+
+.comm1 .com-panel a{
+	color: rgb(195, 195, 149);
+}
+
+.comm3{
+	background: url('C:/Users/пользователь/Desktop/дизайнер/img/коммент2.jpg') 0% 80% no-repeat;
+}
+
+.comm3 h1{
+	color: #82adaf;
+}
+
+.comm3 .com-panel a{
+	color: rgb(163, 189, 204);
+}
+
+.comm3 p{
+	color: #67654b;
+}
+
+.comm h1{
+	position: relative;
+	left: 170px;
+	bottom: 10px;
+	
+	font-family: "Lava 3", Georgia, serif;
+	font-size: 20px;
+}
+
+.comm p{
+	position: relative;
+	left: 170px;
+	bottom: 8px;
+	font-style: italic;
+	color #707373;
+}
+
+.com-panel{
+	position: relative;
+	right: 30px;
+	bottom: 8px;
+	font-size: 13px;
+}
+/*========подвал=====================*/
+.content-footer{
+	background: #181a1f;
+	color: #d3d3d3;
+	padding-left: 3%;
+	margin-top: 20px;
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1.500rem;
+    padding-right: 0.625rem;
+}
+
+.row-footer{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -0.625rem;
+    margin-right: -0.625rem;
+}
+
+.footer-area.widget-area {
+    padding-top: 1.5em;
+    padding-bottom: 0;
+}
+
+.footer-area .widget {
+    margin-top: 0;
+    margin-bottom: 2em;
+  }
+
+ .col-xs-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.widget .widget-title {
+    font-weight: 400;
+}
+
+.footer-area .widget-title, .tm_pb_widget_area .widget-title {
+    padding: 0;
+    border: none;
+}
+
+.site-footer .widget-title {
+    margin: 0 0 31px 0;
+}
+
+.invert span{
+    color: #46b193;
+}
+
+.widget-title {
+    margin: 0 0 1.625em 0;
+    position: relative;
+    padding: 2.2em 0 0 0;
+    border-top: 2px solid #e9e9e9;
+}
+
+.search-form {
+    margin: 0;
+    padding: 0;
+}
+
+
+.search-form__field{
+	border: none;
+	padding: 5px 0;
+}
+
+
